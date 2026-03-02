@@ -42,6 +42,7 @@ Built using Flask, MoviePy, and AI APIs.
 
 ## 📂 Project Structure
 
+```text
 ai-video-repurposer/
 │
 ├── app.py                        # Main Flask application (entry point)
@@ -56,7 +57,7 @@ ai-video-repurposer/
 |
 ├── requirements.txt              # Python dependencies
 └── README.md                     # Project documentation
-
+```
 
 ---
 
