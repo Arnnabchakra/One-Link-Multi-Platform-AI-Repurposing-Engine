@@ -1,0 +1,92 @@
+# 🚀 AI Video Repurposer  
+### One-Link → Multi-Platform AI Content Engine
+
+An AI-powered automation system that converts a single video link into ready-to-post content for multiple social media platforms.
+
+---
+
+## 📌 Project Overview
+
+This project allows users to:
+
+- 🎥 Submit one video URL
+- 🎧 Extract and transcribe audio
+- ✂ Process video automatically
+- 🤖 Generate AI captions for multiple platforms
+- 📦 Download platform-ready content
+
+Built using Flask, MoviePy, and AI APIs.
+
+---
+
+## 🛠 Tech Stack
+
+- Python 3.10+
+- Flask
+- MoviePy
+- Whisper (or Speech-to-Text)
+- Groq / LLM API
+- HTML + CSS (Animated UI)
+
+---
+
+## ⚙️ Features
+
+- Multi-platform caption generation
+- Video processing automation
+- AI-generated CTA
+- Modern animated UI
+- Clean project structure
+
+---
+
+## 📂 Project Structure
+
+ai-video-repurposer/
+│
+├── app.py
+├── services/
+│ ├── caption_engine.py
+│ ├── transcriber.py
+│ ├── video_processor.py
+│
+├── templates/
+│ └── index.html
+│
+├── static/
+├── .gitignore
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 🔑 Setup Instructions
+
+### 1️⃣ Clone the repository
+
+### 2️⃣ Create virtual environment
+
+### 3️⃣ Install dependencies
+
+### 4️⃣ Add API Key
+
+Create `.env` file:
+
+### 5️⃣ Run the application
+
+---
+
+## 🎯 Future Improvements
+
+- Auto posting to social platforms
+- AI hashtag generation
+- Multi-language support
+- Cloud deployment (AWS / Render)
+
+---
+
+## 👨‍💻 Author
+
+**Arnab Chakra**  
+AI/ML Engineer  
