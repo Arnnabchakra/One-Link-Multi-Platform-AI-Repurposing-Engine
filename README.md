@@ -77,6 +77,11 @@ Create `.env` file:
 
 ---
 
+## 📸 Project Preview
+
+![AI Video Repurposer UI](web1.png)
+![AI Video Repurposer UI](web2.png)
+
 ## 🎯 Future Improvements
 
 - Auto posting to social platforms
@@ -89,4 +94,4 @@ Create `.env` file:
 ## 👨‍💻 Author
 
 **Arnab Chakra**  
-AI/ML Engineer  
+A passionate Engineer from India, Feel free to reach me if you have any questions.
