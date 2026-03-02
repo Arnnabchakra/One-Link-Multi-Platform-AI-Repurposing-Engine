@@ -44,19 +44,18 @@ Built using Flask, MoviePy, and AI APIs.
 
 ai-video-repurposer/
 │
-├── app.py
-├── services/
-│ ├── caption_engine.py
-│ ├── transcriber.py
-│ ├── video_processor.py
+├── app.py                        # Main Flask application (entry point)
 │
-├── templates/
-│ └── index.html
+├── services/                     # Core AI & processing logic
+│   ├── caption_engine.py         # Generates AI captions using LLM API
+│   ├── transcriber.py            # Extracts audio & converts speech to text
+│   └── video_processor.py        # Handles video trimming & validation
 │
-├── static/
-├── .gitignore
-├── requirements.txt
-└── README.md
+├── templates/                    # Frontend HTML templates
+│   └── index.html                # Animated UI page
+|
+├── requirements.txt              # Python dependencies
+└── README.md                     # Project documentation
 
 
 ---
