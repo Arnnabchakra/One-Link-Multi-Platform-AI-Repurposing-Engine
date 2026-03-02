@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Video Repurposer</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(-45deg, #667eea, #764ba2, #6b8dd6, #8e44ad);
+        background-size: 400% 400%;
+        animation: gradientMove 10s ease infinite;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .container {
+        position: relative;
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(20px);
+        padding: 40px;
+        border-radius: 20px;
+        width: 400px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        color: white;
+        z-index: 2;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: none;
+        font-size: 14px;
+    }
+
+    input:focus, select:focus {
+        outline: none;
+        box-shadow: 0 0 10px rgba(255,255,255,0.6);
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background: white;
+        color: #764ba2;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #eee;
+        transform: scale(1.05);
+    }
+
+    /* Cursor Glow Effect */
+    .cursor-glow {
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%);
+        pointer-events: none;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        transition: 0.05s;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<div class="container">
+    <h2>🚀 One-Link AI Repurposer</h2>
+
+    <form action="/generate" method="POST">
+
+        <label>Video URL</label>
+        <input type="text" name="video_url" placeholder="Paste video link" required>
+
+        <label>Category</label>
+        <select name="niche" required>
+            <option value="" disabled selected>Select Category</option>
+            <option value="Tech">Tech</option>
+            <option value="Fitness">Fitness</option>
+            <option value="Café">Cafe</option>
+            <option value="Motivation">Motivation</option>
+            <option value="Motivation">Sports</option>
+        </select>
+
+        <label>Optional CTA</label>
+        <input type="text" name="cta" >
+
+        <button type="submit">Generate Content</button>
+
+    </form>
+</div>
+
+<script>
+    const glow = document.getElementById("cursorGlow");
+
+    document.addEventListener("mousemove", (e) => {
+        glow.style.left = e.clientX + "px";
+        glow.style.top = e.clientY + "px";
+    });
+</script>
+
+</body>
+</html>
