@@ -93,5 +93,5 @@ Create `.env` file:
 
 ## 👨‍💻 Author
 
-**Arnab Chakra**  
+**ARNNAB CHAKRA**  
 A passionate Engineer from India, Feel free to reach me if you have any questions.
